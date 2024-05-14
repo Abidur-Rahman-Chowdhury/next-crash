@@ -15,9 +15,11 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
         <nav >
-          <ul className="flex">
+          <ul className="flex gap-6">
             <li> <Link href="/">Home</Link> </li> |
-            <li> <Link href="/about">About</Link> </li>
+            <li> <Link prefetch={false} href="/about">About</Link> </li> | 
+            <li> <Link prefetch={false} href="/blogs">Blogs</Link> </li> |
+            <li> <Link prefetch={false} href="/posts">Posts</Link> </li>
           </ul>
         </nav>
         <hr className="border border-black" />
